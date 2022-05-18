@@ -51,17 +51,16 @@ nav a {
 }
 
 /* Header Body Styles */
+.header-body {
+    margin: 49px 140px 86px 156px;
+}
 .header-title {
     color: #FFFFFF;
-    padding: 121px 0px 169px 156px;
+    padding-right: 50px;
 }
 
 .header-title h1 {
     font-size: 54px;
-}
-
-.header-image {
-    padding: 67px 140px 86px 102px;
 }
 
 .header-image img {
@@ -147,4 +146,164 @@ footer>p>a img {
 .copyright {
     font-size: 18px;
     margin-bottom: 63px;
+}
+
+
+/* ...............................
+    Media Query
+.................................. */
+@media only screen and (max-width: 668px) {
+    nav {
+        display: none;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 695px;
+    }
+
+    /* Header Body Styles */
+    .header-body {
+        margin: 61px 16px;
+    }
+
+    .header-title h1 {
+        font-size: 36px;
+        padding-right: 66px;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+    }
+
+    /* ...........................
+    Main Styles
+.............................. */
+    /* Container Styles */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 47px 16px;
+    }
+
+    .player {
+        box-shadow: 5px 5px 10px 10px rgba(128, 128, 128, 0.089);
+    }
+
+    .player-details {
+        margin-bottom: 24px;
+    }
+
+    /* Copa-America Styles */
+    .copa-america {
+        margin: 36px 15px;
+    }
+
+    .copa-america-title {
+        margin-right: 10px;
+    }
+
+    .copa-america-title h1 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .copa-america-title p {
+        margin-top: 0px;
+    }
+
+    .copa-america-image img {
+        width: 100%;
+        height: 100%;
+        margin-top: 29px;
+    }
+
+    /* ................................
+    Footer Style
+................................... */
+
+    footer>img {
+        width: 125.8px;
+        height: 29.98px;
+    }
+
+}
+
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+    nav {
+        display: none;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 1024px;
+    }
+
+    /* Header Body Styles */
+    .header-body {
+        margin: 61px 52px;
+    }
+
+    .header-title h1 {
+        font-size: 68px;
+        padding-right: 40px;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+    }
+
+    /* ...........................
+    Main Styles
+.............................. */
+    /* Container Styles */
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 47px 20px;
+    }
+
+    .player {
+        box-shadow: 5px 5px 10px 10px rgba(128, 128, 128, 0.089);
+    }
+    /* Copa-America Styles */
+    .copa-america {
+        margin: 56px 30px;
+    }
+
+
+
+    .copa-america-title h1 {
+        font-size: 56px;
+        margin-bottom: 8px;
+    }
+
+    .copa-america-title p {
+        margin-top: 0px;
+    }
+
+    .copa-america-image img {
+        width: 100%;
+        height: 100%;
+        margin-top: 29px;
+    }
+
+    /* ................................
+    Footer Style
+................................... */
+
+    footer>img {
+        width: 300px;
+        height: 70px;
+    }
 }
